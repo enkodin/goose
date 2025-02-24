@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - Dockerfile
+      - entrypoint
   workflow_dispatch:
 
 jobs:
