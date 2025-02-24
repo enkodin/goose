@@ -5,3 +5,5 @@ RUN apk add --no-cache curl
 # ENTRYPOINT
 COPY entrypoint /usr/bin/entrypoint
 RUN chmod +x /usr/bin/entrypoint
+
+CMD [ "entrypoint" ]
