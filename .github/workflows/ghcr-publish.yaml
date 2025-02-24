@@ -1,0 +1,25 @@
+name: ghcr-publish
+on:
+  workflow_dispatch:
+
+jobs:
+
+  ghcr-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: ghcr::login
+        uses: docker/login-action@v1
+        with:
+         registry: ghcr.io
+         username: ${{ github.actor }}
+         password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: build
+        run:
+          docker build . --tag ghcr.io/enkodin/goose:latest
+
+      - name: publish
+        run:
+          docker push ghcr.io/enkodin/goose:latest
