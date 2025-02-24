@@ -1,4 +1,3 @@
 #!/usr/bin/env sh
 
-# goose $
-echo ${INPUT_COMMAND}
+goose ${INPUT_COMMAND}
