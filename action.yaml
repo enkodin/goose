@@ -9,6 +9,16 @@ runs:
   image: "docker://ghcr.io/enkodin/goose:latest"
 inputs:
   command:
-    description: "goose params"
+    description: "goose command"
     required: true
-    default: "--version"
+    default: "status"
+  driver:
+    description: "goose database driver"
+    required: true
+    default: "mysql"
+  dbstring:
+    description: "goose database connection string"
+    required: true
+  directory:
+    description: "goose database migration directory"
+    required: true
