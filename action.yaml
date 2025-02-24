@@ -6,4 +6,4 @@ branding:
   icon: box
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://ghcr.io/enkodin/goose:latest"

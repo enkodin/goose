@@ -3,4 +3,4 @@
 echo "hello ..."
 ls -all
 
-cat README.md
+goose 
