@@ -1,6 +1,8 @@
 name: ghcr-publish
 on:
   push:
+    paths:
+      - Dockerfile
   workflow_dispatch:
 
 jobs:
