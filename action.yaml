@@ -7,6 +7,5 @@ branding:
 runs:
   using: "docker"
   image: "docker://ghcr.io/enkodin/goose:latest"
-  entrypoint: "/entrypoint"
   args:
-    - ${{ inputs.parameters }}
+    - ${{ inputs.command }}
