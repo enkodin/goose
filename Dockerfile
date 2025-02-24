@@ -5,6 +5,3 @@ RUN apk add --no-cache curl && curl -L https://github.com/pressly/goose/releases
 # ENTRYPOINT
 COPY entrypoint /usr/bin/entrypoint
 RUN chmod +x /usr/bin/entrypoint
-
-# EXECUTE
-ENTRYPOINT [ "entrypoint" ]
