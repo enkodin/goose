@@ -1,0 +1,9 @@
+name: "Goose"
+description: "Github Action for Goose"
+author: shyaminayesh
+branding:
+  color: blue
+  icon: box
+runs:
+  using: "docker"
+  image: "Dockerfile"
