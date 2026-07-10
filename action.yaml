@@ -22,3 +22,7 @@ inputs:
   directory:
     description: "goose database migration directory"
     required: true
+  table:
+    description: "goose migrations table name (GOOSE_TABLE)"
+    required: false
+    default: "goose_db_version"
